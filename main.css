@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Open+Sans:wght@600&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E5383B;
+}
+
+.wrapper {
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+    .wrapper h1 {
+        font-family: 'Aladin', cursive;
+        font-size: 75px;
+        color: #F5F3F4;
+    }
+
+    .wrapper p {
+        font-size: 24px;
+        color: #fff;
+        margin: 15px 0;
+    }
+
+    .label {
+        padding: 10px 0;
+        color: #fff;
+    }
+
+    #quantity {
+        border: none;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    button {
+        background-color: #F5F3F4;
+        padding: 15px 25px;
+        margin: 15px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #d8d6d2;
+    }
+
+.container {
+    width: 728px;
+    height: 600px;
+    background-color: #BA181B;
+    border-radius: 50px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #grid__container {
+        width: 512px;
+        height: 512px;
+        background-color: #fff;
+        box-shadow: inset 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+        display: inline-grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+    }
+
+    .square {
+        background-color: white;
+        border: 1px solid black;
+    }
+    
+    .color {
+    background-color: black;
+    border: 1px solid black;
+    }
+      
